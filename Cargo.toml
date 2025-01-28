@@ -1,0 +1,14 @@
+[package]
+name = "fhe_aes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.5.27"
+tfhe = { version = "0.11.1", features = ["boolean", "shortint", "integer", "nightly-avx512"] }
+hex = "0.4"
+clap = { version = "4.5.27", features = ["derive"] }
+rand = "0.8"
+aes = "0.8"  # For reference implementation
+criterion = "0.5"  # For benchmarking
+
